@@ -3,6 +3,11 @@ body {
     padding-top: 120px; 
 }
 
+
+
+
+/* ALL NAVIGATION BAR CODE */
+
 .nav-logo {
     height: 100px;     
     width: auto;
@@ -39,17 +44,17 @@ body {
     transform: translateY(-2px); 
 }
 
-.quote_btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+/*BUTTONS USED MULTIPLE TIMES THROUGHOUT */
+/*ALL BUTTONS WILL USE THE STANDARD GIVEN TO THEM BY THE BUTTON CLASS*/
 
-    padding: 14px 28px;
-    border-radius: 10px;
+.quote_btn {
 
     background: linear-gradient(135deg, #7b1e1e, #6d3636);
     color: #ffffff;
+   
+}
 
+button {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.4px;
@@ -58,4 +63,75 @@ body {
     box-shadow: 0 10px 25px rgba(123, 30, 30, 0.35);
     transition: all 0.25s ease;
     margin-right: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 10px;
+
+
 }
+
+.text-box {
+    flex: 1;                    
+    min-width: 300px;
+}
+
+.text-box h2 {
+    font-size: 2rem;
+    color:#7b1e1e
+}
+
+
+/*HERO SECTION - THIS IS SECTIONS OIF WEBSITES HOLDING SEPERATED INFO */
+
+.hero-section {
+    min-height: 100vh; /* fills the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;                 
+    max-width: 1200px;
+    margin: 0 auto;            
+    flex-wrap: wrap;           
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+img {
+    width: 500px;      
+    height: auto;      
+    display: block;     
+    margin: 0 auto;  
+
+}
+
+
+
+.intro {
+    background-image: url("../media/front2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1px;                
+    justify-content: center;   
+    margin-top: 20px;
+    flex-wrap: wrap;           
+}
+
