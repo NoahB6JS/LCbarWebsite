@@ -42,6 +42,26 @@ body {
     transform: translateY(-2px); 
 }
 
+
+.nav_bar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #6d3636;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+
+.nav_bar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 /*BUTTONS USED MULTIPLE TIMES THROUGHOUT */
 /*ALL BUTTONS WILL USE THE STANDARD GIVEN TO THEM BY THE BUTTON CLASS*/
 
@@ -259,6 +279,30 @@ img {
     margin-bottom: 6px;
 }
 
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #555;
+    gap: 150px;
+}
+
+
+.footer-legal a {
+    color: #6d3636;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/*ENTRY FOR NEWSLETTER IN THE FOOTER*/
+
 .newsletter-form {
     display: flex;
     gap: 10px;
@@ -289,35 +333,11 @@ img {
     box-shadow: 0 8px 15px rgba(123,30,30,0.35);
 }
 
-/* Bottom section */
-.footer-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    color: #555;
-    gap: 150px;
-}
-
-
-.footer-legal a {
-    color: #6d3636;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-
-.footer-bottom p {
-    margin: 0;
-}
 
 /* ABOUT SECTION */
 .about {
     background-color: #ffffff;
 }
-
-/* Intro */
 .about-intro {
     text-align: center;
     max-width: 800px;
@@ -368,6 +388,7 @@ img {
     color: #555;
 }
 
+/*ALL TEAM CARDS ON ABOUT PAGE*/
 
 .team-section {
     text-align: center;
@@ -412,24 +433,54 @@ img {
 }
 
 
-
-
-
-.nav_bar a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 2px;
-    background-color: #6d3636;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  z-index: 1000;
 }
 
-/* hover effect */
-.nav_bar a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+/*POP UP QUOTE*/
+
+.quote-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 1001;
 }
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.quote-popup input,
+.quote-popup textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+
+
+
+

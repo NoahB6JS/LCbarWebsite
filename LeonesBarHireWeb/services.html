@@ -18,14 +18,29 @@
             <a href="about.html">About</a>
             <a href="Contact.html">Contact</a>
             <a href="Gallery.html">Gallery</a>
-            <a href="Quotes.html">Quotes</a>
             <a href="index.html" class="nav-logo-link">
             <img src="media/LC_logo.png" alt="Leones Catering Logo" class="nav-logo">
             </a>
             <a href="Services.html">Services</a>
             <a href="Testimonials.html">Testimonials</a>
-            <button class="quote_btn">Get A Quote</button>
+            <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
     </nav>
+
+
+<!-- GET A QUOTE POPUP -->
+<div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
+
+<div class="quote-popup" id="quotePopup">
+  <button class="close-btn" onclick="closeQuote()">×</button>
+  <h2>Get A Quote</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Tell us about your event..." required></textarea>
+    <button type="submit" class="quote_btn">Send Request</button>
+  </form>
+</div>
 
 <!--Services section holds all important information about the company's services -->
 <section class="services-page">
@@ -84,7 +99,7 @@
         <div class="footer-top">
 
             <div class="footer-nav">
-                <img src="media/leones-logo.svg" alt="Leone's Catering Services logo">
+                <img src="media/LC_logo.png" alt="Leone's Catering Services logo">
                 <nav>
                     <nav id="footer-links">
                         <a href="#About">About</a>
@@ -130,6 +145,9 @@
 
     </section>
 </footer>
+
+<!--JAVASCRIPT LINK TO SCRIPT-->
+<script src="javascript/main.js"></script>
 
 </body>
 </html>
