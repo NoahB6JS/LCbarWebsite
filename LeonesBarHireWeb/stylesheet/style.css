@@ -140,18 +140,43 @@ img {
     height: auto;      
     display: block;     
     margin: 0 auto;  
-
 }
-
 
 .intro {
     background-image: url("../media/front2.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    
     color: #ffffff;
     position: relative;
 }
+
+/*TESTIMONIALS SECTION*/
+
+
+.testimonials {
+      background-image: url("../media/front1.jpg");
+      background-size: cover;
+    
+}
+
+
+.hero-section.testimonials h1 {
+  color:#7b1e1e;
+  font-size: 46rem;   
+  font-weight: 500;
+}
+
+.hero-section.testimonials .subtitle {
+  font-size: 1.4rem;
+ 
+}
+
+.hero-section.testimonials {
+  justify-content: flex-start;
+  padding-top: 40px; 
+}
+
 
 .service-item {
     display: grid;
