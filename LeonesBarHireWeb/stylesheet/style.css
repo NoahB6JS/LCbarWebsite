@@ -161,10 +161,26 @@ img {
 }
 
 
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
 .hero-section.testimonials h1 {
   color:#7b1e1e;
-  font-size: 46rem;   
+  font-size: 4rem;   
   font-weight: 500;
+}
+
+.hero-section.testimonials p {
+  color:#000000;
+  font-size: 1rem;   
+  font-weight: 300;
 }
 
 .hero-section.testimonials .subtitle {
@@ -175,6 +191,14 @@ img {
 .hero-section.testimonials {
   justify-content: flex-start;
   padding-top: 40px; 
+}
+
+.testimonial element p {
+  color:#333333;
+}
+
+.hero-section.testimonials .subtitle {
+  color:#720909;
 }
 
 
@@ -216,8 +240,6 @@ img {
     line-height: 1.5;
     color: #555;
 }
-
-
 
 /*FOOTER CSS OVERALL*/
 
@@ -503,6 +525,8 @@ img {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
+
 
 
 

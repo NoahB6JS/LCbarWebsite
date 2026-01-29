@@ -22,8 +22,23 @@
             </a>
             <a href="Services.html">Services</a>
             <a href="Testimonials.html">Testimonials</a>
-            <button class="quote_btn">Get A Quote</button>
+            <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
     </nav>
+
+<!-- GET A QUOTE POPUP -->
+<div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
+
+<div class="quote-popup" id="quotePopup">
+  <button class="close-btn" onclick="closeQuote()">×</button>
+  <h2>Get A Quote</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Tell us about your event..." required></textarea>
+    <button type="submit" class="quote_btn">Send Request</button>
+  </form>
+</div>
 
     
     
@@ -32,7 +47,7 @@
         <h1>Luxury Mobile Bar Hire & Catering For Any Occasion</h1>
         <p>Weddings  .  Private Parties  .  Corporate Events  .  Festivals </p>
         <div class="hero-buttons">
-        <button class="quote_btn">Get A Quote</button>
+        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
         <button>View Our Bar Packages</button> 
         </div>
     </section>
@@ -49,7 +64,7 @@
                     to presentation, we focus on the details that make each event run smoothly. Our experienced team is committed to reliable
                     service and seamless execution. With a passion for good food and genuine hospitality, we help bring your vision to life.
                 </p>
-                <button class="quote_btn">Get A Quote</button>
+                <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
                 </div>
                 <div class="image-box">
                 <img src="media/index_1.jpg" alt="Dining table with glasses photo">
@@ -84,7 +99,7 @@
             </section>
 
         </div>
-        <button class="quote_btn">Get A Quote</button>
+        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
     </section>
 
 
@@ -142,6 +157,7 @@
 
     </section>
 </footer>
+
 <!--JAVASCRIPT LINK TO SCRIPT-->
 <script src="javascript/main.js"></script>
 
