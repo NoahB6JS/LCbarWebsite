@@ -27,12 +27,15 @@ body {
 }
 
 .nav_bar a {
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
     color: #4a2f2f;      
     margin: 0 12px;        
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+
 
 
 }
