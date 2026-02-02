@@ -36,8 +36,6 @@ body {
     font-family: 'Cormorant Garamond', serif;
     position: relative;
 
-
-
 }
 
 .nav_bar a:hover {
@@ -63,6 +61,35 @@ body {
 .nav_bar a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.nav_bar button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(255, 254, 254, 0.35);
+    background-color: darkgoldenrod;
+}
+
+.nav-Rside {
+    display: flex;
+    align-items: center;
+    gap: 25px;  
+}
+/*NAVIGATION LINKS  BOX*/
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;  
+    white-space: nowrap; 
+   
+    height: 30%;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
 /*BUTTONS USED MULTIPLE TIMES THROUGHOUT */
@@ -174,20 +201,16 @@ img {
 }
 
 
-.hero-section.testimonials h1 {
-  color:#7b1e1e;
-  font-size: 4rem;   
-  font-weight: 500;
-}
-
 .hero-section.testimonials p {
   color:#000000;
+  font-style: italic;
   font-size: 1rem;   
   font-weight: 300;
 }
 
 .hero-section.testimonials .subtitle {
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-style: ;
  
 }
 
@@ -203,6 +226,20 @@ img {
 .hero-section.testimonials .subtitle {
   color:#720909;
 }
+
+
+
+.quote_btn_testimonial {
+  
+  margin: 20px auto 0 auto; 
+  opacity: 100%;
+}
+
+.testimonials-grid .testimonial {
+  background: rgba(255, 255, 255, 0.8); /* transparent background */
+}
+
+/*SERVICES SECTION*/
 
 
 .service-item {
@@ -224,12 +261,21 @@ img {
     text-align: center;
 }
 
+/*THE BOXES HOLDING INFORMATION */
+
 .element {
     background: #efe1d9;
     padding: 30px 20px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.element .testimonials {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
 
