@@ -578,6 +578,89 @@ img {
 
 
 
+/*SERVICES PAGE CODE*/
+
+/*ALL SERVICES IMAGES */
+
+.service-block.service-wedding {
+    background-image: url("../media/wedding1.jpg");
+    color: rgb(255, 255, 255);
+}
+.service-block.service-corporate {
+    background-image: url("../media/corp_party1.jpg");
+    color: rgb(255, 255, 255);
+}
+
+.service-block.service-private {
+    background-image: url("../media/priv_party1.jpg");
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.services-page {
+    padding-bottom: 150px;            
+    background: #faf8f3;
+}
+
+.services-page h3 {
+    text-align: center;
+    font-size: 6rem;
+    margin: 50px 0 20px;
+    
+}
+
+.column {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 60px;
+}
+
+.column div {
+    background: #bbbbbb;
+    padding: 25px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.column h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.services_page h5 {
+    font-size: 5rem;
+    color: #555555;
+}
+
+.service-block p {
+    color: #ffffff;
+}
+
+
+.service-block {
+    position: relative;
+    width: 100vw;          
+    margin-left: calc(-50vw + 50%);  
+    height: 450px;
+    padding: 40px;
+    border-radius: 0;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    justify-content: center;   
+    align-items: center;       
+
+}
 
 
 
