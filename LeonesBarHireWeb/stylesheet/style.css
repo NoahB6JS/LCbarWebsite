@@ -134,13 +134,19 @@ button {
 /*HERO SECTION - THIS IS SECTIONS OIF WEBSITES HOLDING SEPERATED INFO */
 
 .hero-section {
-    min-height: 90vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+.intro {
+    padding-top: 130px;   /* adjust as needed */
+    padding-bottom: 230px; /* adjust as needed */
+}
+
 
 .hero-content {
     display: flex;
@@ -183,11 +189,20 @@ img {
 
 /*TESTIMONIALS SECTION*/
 
+.testimonial-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6e0e0e;
 
-.testimonials {
-      background-image: url("../media/front1.jpg");
-      background-size: cover;
-    
+}
+
+
+.hero-section.testimonials {
+    background-image: url("../media/front1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
 }
 
 
@@ -197,7 +212,8 @@ img {
   gap: 30px;
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 50px 20px;
+  
 }
 
 
@@ -206,26 +222,21 @@ img {
   font-style: italic;
   font-size: 1rem;   
   font-weight: 300;
+  font-size: 1rem;
+  font-style: normal;
 }
 
-.hero-section.testimonials .subtitle {
-  font-size: 2rem;
-  font-style: ;
- 
-}
+
+
 
 .hero-section.testimonials {
-  justify-content: flex-start;
-  padding-top: 40px; 
+    padding-top: 120px;  
+    padding-bottom: 40px;
+    background-image: url("../media/front1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.testimonial element p {
-  color:#333333;
-}
-
-.hero-section.testimonials .subtitle {
-  color:#720909;
-}
 
 
 
@@ -236,7 +247,7 @@ img {
 }
 
 .testimonials-grid .testimonial {
-  background: rgba(255, 255, 255, 0.8); /* transparent background */
+  background: rgba(255, 255, 255, 0.8); 
 }
 
 /*SERVICES SECTION*/
@@ -630,9 +641,9 @@ img {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-.services_page h5 {
-    font-size: 5rem;
-    color: #555555;
+.services-page h5 {
+    font-size: 3rem;
+    color: #720909;
 }
 
 .service-block p {
