@@ -1,3 +1,7 @@
+
+
+//CODE FOR OPENING AND CLOSING QUOTE TAB
+
 function openQuote() {
   document.getElementById("quotePopup").style.display = "block";
   document.getElementById("quoteOverlay").style.display = "block";
