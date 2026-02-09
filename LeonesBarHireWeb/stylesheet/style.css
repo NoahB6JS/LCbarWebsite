@@ -43,7 +43,6 @@ body {
     transform: translateY(-2px); 
 }
 
-
 .nav_bar a::after {
     content: "";
     position: absolute;
@@ -152,8 +151,8 @@ button {
 }
 
 .intro {
-    padding-top: 130px;   /* adjust as needed */
-    padding-bottom: 230px; /* adjust as needed */
+    padding-top: 130px;  
+    padding-bottom: 230px; 
 }
 .intro p{
     font-size: 1.2rem;
@@ -219,7 +218,7 @@ img {
 }
 
 
-.testimonials-grid {
+.layout-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
@@ -263,6 +262,7 @@ img {
   background: rgba(255, 255, 255, 0.8); 
   
 }
+
 /*ADJUSTING MARGINS OF TESTIMONIALS TO MAKE THEM LOOK BETTER*/
 
 .e1 {
@@ -315,14 +315,13 @@ img {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-}
-
-.element .testimonials {
+    opacity: 70%;
     font-size: 1.1rem;
     font-style: italic;
     margin-bottom: 15px;
+    
 }
+
 
 
 .element h3 {
@@ -512,6 +511,12 @@ img {
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.team-card{
+    background-color: #efe1d9;
+    padding: 10% 10% 10% 10%;
+    border-radius: 10%;
 }
 
 .about-card h3 {
@@ -707,6 +712,9 @@ img {
     color: #ffffff;
 }
 
+.services_page h3 {
+    font-size: 5rem;
+}
 
 .service-block {
     position: relative;
@@ -730,7 +738,17 @@ img {
 
 }
 
+/*about page map*/
 
+.map-section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
 
-
+.map-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #720909;
+}
 
