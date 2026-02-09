@@ -37,19 +37,84 @@
 
 
 <!-- GET A QUOTE POPUP -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quote Popup</title>
+
+
+
+</head>
+<body>
+
+<!-- Trigger button example -->
+<button onclick="openQuote()">Get A Quote</button>
+
+
+<!-- Overlay -->
 <div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
 
+<!-- Popup -->
 <div class="quote-popup" id="quotePopup">
   <button class="close-btn" onclick="closeQuote()">×</button>
   <h2>Get A Quote</h2>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Tell us about your event..." required></textarea>
+  <form id="quoteForm" onsubmit="sendQuote(event)">
+    <input type="text" id="q_name" placeholder="Your Name" required>
+    <input type="email" id="q_email" placeholder="Your Email" required>
+    <textarea id="q_message" placeholder="Tell us about your event..." required></textarea>
     <button type="submit" class="quote_btn">Send Request</button>
   </form>
 </div>
+
+
+<!-- EmailJS library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("RoQAL6t0qrXgu4K3k");   // <-- replace
+</script>
+
+<script>
+function openQuote() {
+  document.getElementById("quoteOverlay").style.display = "block";
+  document.getElementById("quotePopup").style.display = "block";
+}
+
+function closeQuote() {
+  document.getElementById("quoteOverlay").style.display = "none";
+  document.getElementById("quotePopup").style.display = "none";
+}
+
+// Send email using EmailJS
+function sendQuote(e) {
+  e.preventDefault(); // Stop refresh
+
+  const name = document.getElementById("q_name").value;
+  const email = document.getElementById("q_email").value;
+  const message = document.getElementById("q_message").value;
+
+  emailjs.send("service_58ycelq", "template_zbmmr2i", {   // <-- replace these
+      from_name: name,
+      from_email: email,
+      message: message
+  })
+  .then(() => {
+      alert("Your quote request has been sent!");
+      closeQuote();
+      document.getElementById("quoteForm").reset();
+  })
+  .catch((err) => {
+      alert("Error sending message.");
+      console.error(err);
+  });
+}
+</script>
+
+
+
 
     
     
