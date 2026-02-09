@@ -240,7 +240,6 @@ img {
 
 
 
-
 .hero-section.testimonials {
     padding-top: 120px;  
     padding-bottom: 40px;
@@ -248,8 +247,6 @@ img {
     background-size: cover;
     background-position: center;
 }
-
-
 
 
 .quote_btn_testimonial {
@@ -289,13 +286,17 @@ img {
 
 
 .service-item {
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    color: #efe1d9;
+}
+
+
+.service-item img {
+    width: 100%;
+    height: auto;
 }
 
 .services h1 {
@@ -310,15 +311,15 @@ img {
 /*THE BOXES HOLDING INFORMATION */
 
 .element {
-    background: #efe1d9;
+   
+    background: rgba(239, 225, 217, 0.7); /* ONLY background is transparent */
     padding: 30px 20px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 70%;
     font-size: 1.1rem;
     font-style: italic;
-    margin-bottom: 15px;
+
     
 }
 
@@ -326,7 +327,7 @@ img {
 
 .element h3 {
     margin-bottom: 12px;
-    color: #6d3636;
+    color: #000000;
 }
 
 .element p {
@@ -627,12 +628,7 @@ img {
   margin: 12px auto !important; 
   display: block !important; 
 
-
-  
 }
-
-
-
 
 
 .quote-popup .submit-btn {
@@ -648,12 +644,7 @@ img {
   margin-top: 15px !important;
 }
 
-
-
-
 /*SERVICES PAGE CODE*/
-
-/*ALL SERVICES IMAGES */
 
 .service-block.service-wedding {
     background-image: url("../media/wedding1.jpg");
@@ -668,6 +659,18 @@ img {
     background-image: url("../media/priv_party1.jpg");
     color: rgb(255, 255, 255);
 }
+
+
+.services-bg {
+    background-image: url("../media/bar.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
 
 
 

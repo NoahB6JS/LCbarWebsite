@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,30 +32,14 @@
 </nav>
 
 
-
-<!-- GET A QUOTE POPUP -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quote Popup</title>
-
-
-
 </head>
 <body>
 
-<!-- Trigger button example -->
-<button onclick="openQuote()">Get A Quote</button>
 
-
-<!-- Overlay -->
 <div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
 
-<!-- Popup -->
 <div class="quote-popup" id="quotePopup">
-  <button class="close-btn" onclick="closeQuote()">×</button>
+  <button class="close-btn" onclick="closeQuote()">x</button>
   <h2>Get A Quote</h2>
 
   <form id="quoteForm" onsubmit="sendQuote(event)">
@@ -115,9 +96,6 @@ function sendQuote(e) {
 
 
 
-
-    
-    
     <header>
     <section class="hero-section intro">
         <h1>Luxury Mobile Bar Hire & Catering For Any Occasion</h1>
@@ -149,34 +127,37 @@ function sendQuote(e) {
     </section>
 
     <div>
-    <section class="hero-section services">
-        <h1>Our Mobile Bar Services</h1>
-
-        <div class="service-item">
-
-            <section class="element">
-                <h3>Weddings</h3>
-                <p>A premium bar service tailored to your special day.</p>
-            </section>
-
-            <section class="element">
-                <h3>Private Parties</h3>
-                <p>Birthdays, anniversaries, and other celebrations.</p>
-            </section>
-
-            <section class="element">
-                <h3>Corporate Events</h3>
-                <p>Impress clients and colleagues with a professional bar setup.</p>
-            </section>
-
-            <section class="element">
-                <h3>Festivals</h3>
-                <p> Reliable, high-volume service for large crowds.</p>
-            </section>
-
-        </div>
-        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
+    <section class="hero-section services services-bg">
     </section>
+    
+    <section class="service-item">
+
+    <div class="element photo">
+        <h3>Weddings</h3>
+        <p>A premium bar service tailored to your special day.</p>
+    </div>
+
+    <div class="element photo">
+        <h3>Private Parties</h3>
+        <p>Birthdays, anniversaries, and other celebrations.</p>
+    </div>
+
+    <div class="element photo">
+        <h3>Corporate Events</h3>
+        <p>Impress clients and colleagues with a professional bar setup.</p>
+    </div>
+
+    <div class="element photo">
+        <h3>Festivals</h3>
+        <p>Reliable, high-volume service for large crowds.</p>
+    </div>
+
+    <div class="element photo">
+        <img src="media/hygiene_rating.png" alt="Hygiene Rating">
+    </div>
+
+</section>
+
 
 
 
