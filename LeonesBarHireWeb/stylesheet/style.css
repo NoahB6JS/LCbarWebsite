@@ -191,7 +191,7 @@ img {
 }
 
 
-.testimonials-grid {
+.layout-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
@@ -269,6 +269,7 @@ img {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 70%;
     
 }
 
@@ -639,6 +640,9 @@ img {
     color: #ffffff;
 }
 
+.services_page h3 {
+    font-size: 5rem;
+}
 
 .service-block {
     position: relative;
@@ -662,6 +666,24 @@ img {
 
 }
 
+/*about page map*/
 
+.map-section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
 
+.map-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #720909;
+}
 
+.map-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
