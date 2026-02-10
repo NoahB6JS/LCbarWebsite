@@ -294,6 +294,7 @@ img {
 }
 
 
+
 .service-item img {
     width: 100%;
     height: auto;
@@ -313,14 +314,21 @@ img {
 .element {
    
     background: rgba(239, 225, 217, 0.7); /* ONLY background is transparent */
-    padding: 30px 20px;
+    padding: 10% 10%;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 1.1rem;
     font-style: italic;
+    width: 70%;
+    height:60%;
 
     
+}
+
+.element.different {
+    background: none !important;
+    box-shadow: none; /* Optional: remove the shadow if you want it clean */
 }
 
 
