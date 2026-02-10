@@ -1,46 +1,55 @@
+/* ===========================
+   GLOBAL / BASE STYLES
+=========================== */
 
 body {
-    padding-top: 120px; 
+    padding-top: 120px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-/* ALL NAVIGATION BAR CODE */
+/* ===========================
+   NAVIGATION BAR
+=========================== */
 
 .nav-logo {
-    height: 100px;     
+    height: 100px;
     width: auto;
-
 }
 
 .nav_bar {
-    position: fixed;         
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;             
-    z-index: 1000;        
-    padding: 16px 50px;       
+    width: 100%;
+    z-index: 1000;
+    padding: 16px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #efe1d9; 
+    background-color: #efe1d9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .nav_bar a {
     font-size: 30px;
     text-decoration: none;
-    color: #4a2f2f;      
-    margin: 0 12px;        
+    color: #4a2f2f;
+    margin: 0 12px;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
-    font-family: 'Cormorant Garamond', serif;
     position: relative;
-
 }
 
 .nav_bar a:hover {
-    color: #7b1e1e;        
-    transform: translateY(-2px); 
+    color: #7b1e1e;
+    transform: translateY(-2px);
 }
 
 .nav_bar a::after {
@@ -56,7 +65,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-
 .nav_bar a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
@@ -71,18 +79,17 @@ body {
 .nav-Rside {
     display: flex;
     align-items: center;
-    gap: 25px;  
+    gap: 25px;
 }
-/*NAVIGATION LINKS  BOX*/
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 25px;  
-    white-space: nowrap; 
-   
+    gap: 25px;
+    white-space: nowrap;
     height: 30%;
 }
+
 .nav-links a {
     text-decoration: none;
     color: #333;
@@ -91,16 +98,9 @@ body {
     transition: 0.3s ease;
 }
 
-/*BUTTONS USED MULTIPLE TIMES THROUGHOUT */
-/*ALL BUTTONS WILL USE THE STANDARD GIVEN TO THEM BY THE BUTTON CLASS*/
-
-.quote_btn {
-
-    background: linear-gradient(135deg, #7b1e1e, #6d3636);
-    color: #ffffff;
-    margin-left: 150px;
-   
-}
+/* ===========================
+   BUTTONS
+=========================== */
 
 button {
     font-size: 15px;
@@ -116,30 +116,25 @@ button {
     justify-content: center;
     padding: 14px 28px;
     border-radius: 10px;
-    
-
-
 }
 
-.text-box {
-    flex: 1;                    
-    min-width: 300px;
+.quote_btn {
+    background: linear-gradient(135deg, #7b1e1e, #6d3636);
+    color: #ffffff;
+    margin-left: 150px;
 }
 
-.text-box h2 {
-    font-size: 2rem;
-    color:#7b1e1e
-}
-
-.close-btn{
-    width: 50px;           
+.close-btn {
+    width: 50px;
     height: 50px;
     border-radius: 70%;
-    border-color: #000000;
+    border-color: #000;
     font-size: large;
 }
 
-/*HERO SECTION - THIS IS SECTIONS OIF WEBSITES HOLDING SEPERATED INFO */
+/* ===========================
+   HERO SECTION
+=========================== */
 
 .hero-section {
     min-height: 50vh;
@@ -151,24 +146,25 @@ button {
 }
 
 .intro {
-    padding-top: 130px;  
-    padding-bottom: 230px; 
-}
-.intro p{
-    font-size: 1.2rem;
-    color: #ffffff;
+    padding: 130px 0 230px;
+    background-image: url("../media/front2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
+.intro p {
+    font-size: 1.2rem;
+}
 
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;                 
+    gap: 40px;
     max-width: 1200px;
-    margin: 0 auto;            
-    flex-wrap: wrap;     
-          
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .hero-section h1 {
@@ -177,165 +173,115 @@ button {
 
 .hero-buttons {
     display: flex;
-    gap: 1px;                
-    justify-content: center;   
+    gap: 1px;
+    justify-content: center;
     margin-top: 20px;
-    flex-wrap: wrap;           
+    flex-wrap: wrap;
 }
 
-img {
-    width: 500px;      
-    height: auto;      
-    display: block;     
-    margin: 0 auto;  
+.text-box {
+    flex: 1;
+    min-width: 300px;
 }
 
-.intro {
-    background-image: url("../media/front2.jpg");
-    background-size: cover;
-    background-position: center;
-    
-    color: #ffffff;
-    position: relative;
+.text-box h2 {
+    font-size: 2rem;
+    color: #7b1e1e;
 }
 
-/*TESTIMONIALS SECTION*/
+/* ===========================
+   TESTIMONIALS
+=========================== */
 
 .testimonial-heading {
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
     color: #6e0e0e;
-
 }
 
-
 .hero-section.testimonials {
+    padding: 120px 20px 40px;
     background-image: url("../media/front1.jpg");
     background-size: cover;
     background-position: center;
-    padding: 80px 20px;
 }
-
-
-.layout-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 50px 20px;
-  
-}
-
 
 .hero-section.testimonials p {
-  color:#000000;
-  font-style: italic;
-  font-size: 1rem;   
-  font-weight: 300;
-  font-size: 1rem;
-  font-style: normal;
+    color: #000;
+    font-size: 1rem;
 }
 
-
-
-.hero-section.testimonials {
-    padding-top: 120px;  
-    padding-bottom: 40px;
-    background-image: url("../media/front1.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-
-.quote_btn_testimonial {
-  
-  margin: 20px auto 0 auto; 
-  opacity: 100%;
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 50px 20px;
 }
 
 .testimonials-grid .testimonial {
-  background: rgba(255, 255, 255, 0.8); 
-  
+    background: rgba(255, 255, 255, 0.8);
 }
 
-/*ADJUSTING MARGINS OF TESTIMONIALS TO MAKE THEM LOOK BETTER*/
-
-.e1 {
-    margin-top: 40px;  
-}
-
-.e2 {
-    margin-top: 20px;  
-}
-
-.e3 {
-    margin-bottom: 60px; 
-}
 .testimonial {
     align-self: start;
 }
 
-.e1 {
-    margin-top: -50px;
+.e1 { margin-top: -50px; }
+.e2 { margin-top: 20px; }
+.e3 { margin-bottom: 60px; }
+
+/* Quote button in testimonials */
+.quote_btn_testimonial {
+    margin: 20px auto 0;
+    opacity: 100%;
 }
 
+/* ===========================
+   SERVICES
+=========================== */
 
-/*SERVICES SECTION*/
+.services {
+    text-align: center;
+}
 
+.services h1 {
+    color: #7b1e1e;
+}
 
 .service-item {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5% 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
 }
 
-
-
 .service-item img {
     width: 100%;
-    height: auto;
 }
-
-.services h1 {
-    color:#7b1e1e;
-}
-
-.services{
-
-    text-align: center;
-}
-
-/*THE BOXES HOLDING INFORMATION */
 
 .element {
-   
-    background: rgba(239, 225, 217, 0.7); /* ONLY background is transparent */
-    padding: 10% 10%;
+    background: rgba(239, 225, 217, 0.7);
+    padding: 10%;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 1.1rem;
     font-style: italic;
     width: 70%;
-    height:60%;
-
-    
+    height: 60%;
 }
 
 .element.different {
     background: none !important;
-    box-shadow: none; /* Optional: remove the shadow if you want it clean */
+    box-shadow: none;
 }
-
-
 
 .element h3 {
     margin-bottom: 12px;
-    color: #000000;
+    color: #000;
 }
 
 .element p {
@@ -344,21 +290,20 @@ img {
     color: #555;
 }
 
-/*FOOTER CSS OVERALL*/
+/* ===========================
+   FOOTER
+=========================== */
 
 .footer {
     background-color: #efe1d9;
-    color: #333; 
-    font-family: 'Arial', sans-serif;
+    color: #333;
     padding: 60px 20px 30px;
 }
-
 
 .footer .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .footer-top {
     display: flex;
@@ -370,18 +315,15 @@ img {
     margin-bottom: 30px;
 }
 
-
 .footer-nav {
     flex: 1 1 250px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
 }
 
 .footer-nav img {
     width: 140px;
-    height: auto;
 }
 
 #footer-links {
@@ -391,16 +333,14 @@ img {
 }
 
 #footer-links a {
-    text-decoration: none;
     color: #6d3636;
+    text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 #footer-links a:hover {
     color: #7b1e1e;
 }
-
 
 .footer-column {
     flex: 1 1 220px;
@@ -415,9 +355,8 @@ img {
 .footer-column p,
 .footer-column ul {
     font-size: 0.95rem;
-    line-height: 1.5;
     color: #333;
-    margin: 0 0 12px 0;
+    margin-bottom: 12px;
 }
 
 .footer-column ul {
@@ -433,25 +372,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    gap: 150px;
     font-size: 0.85rem;
     color: #555;
-    gap: 150px;
 }
-
 
 .footer-legal a {
     color: #6d3636;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
-
-
-.footer-bottom p {
-    margin: 0;
-}
-
-/*ENTRY FOR NEWSLETTER IN THE FOOTER*/
 
 .newsletter-form {
     display: flex;
@@ -470,24 +399,20 @@ img {
 .newsletter-form button {
     padding: 10px 20px;
     border-radius: 25px;
-    border: none;
     background: linear-gradient(135deg, #7b1e1e, #6d3636);
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.newsletter-form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(123,30,30,0.35);
-}
+/* ===========================
+   ABOUT PAGE
+=========================== */
 
-
-/* ABOUT SECTION */
 .about {
-    background-color: #ffffff;
+    background-color: #fff;
 }
+
 .about-intro {
     text-align: center;
     max-width: 800px;
@@ -496,7 +421,6 @@ img {
 
 .about-intro h1 {
     color: #6d3636;
-    margin-bottom: 10px;
     font-size: 50px;
     padding-top: 20%;
 }
@@ -522,9 +446,9 @@ img {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.team-card{
+.team-card {
     background-color: #efe1d9;
-    padding: 10% 10% 10% 10%;
+    padding: 10%;
     border-radius: 10%;
 }
 
@@ -533,18 +457,16 @@ img {
     margin-bottom: 12px;
 }
 
-
 .about-list {
     padding-left: 18px;
 }
 
 .about-list li {
     margin-bottom: 10px;
-    line-height: 1.5;
     color: #555;
 }
 
-/*ALL TEAM CARDS ON ABOUT PAGE*/
+/* Team section */
 
 .team-section {
     text-align: center;
@@ -553,19 +475,17 @@ img {
 }
 
 .team-section h2 {
-    margin-bottom: 30px;
     font-size: 30px;
     color: #6d3636;
+    margin-bottom: 30px;
 }
 
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 0 20px;
-    padding-bottom: 100px;
+    padding: 0 20px 100px;
 }
-
 
 .team-card img {
     width: 100%;
@@ -576,123 +496,133 @@ img {
 }
 
 .team-card h4 {
-    
-    margin: 5px 0;
     color: #6d3636;
+    margin: 5px 0;
 }
 
 .team-card span {
     font-size: 0.9rem;
     color: #777;
-    display: block;
     margin-bottom: 10px;
 }
 
+/* ===========================
+   QUOTE POPUP
+=========================== */
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: none;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 1000;
 }
-
-/*POP UP QUOTE THINGY*/
 
 .quote-popup {
-  position: fixed !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-
-  background: #ffffff !important;
-  border: 3px solid #720909 !important;   
-  padding: 40px !important;               
-  border-radius: 40% !important;        
-  width: 95% !important;
-  max-width: 450px !important;
-
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45) !important;   
-  display: none;
-  z-index: 1001 !important;
-
-  font-family: "Poppins", sans-serif !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: #fff !important;
+    border: 3px solid #720909 !important;
+    padding: 40px !important;
+    border-radius: 40% !important;
+    width: 95% !important;
+    max-width: 450px !important;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.45) !important;
+    display: none;
+    z-index: 1001 !important;
+    font-family: "Poppins", sans-serif !important;
 }
-
 
 .quote-popup input,
 .quote-popup textarea {
-  width: 100% !important;
-  padding: 14px !important;
-  margin: 12px 0 !important;
-  border-radius: 12px !important;
-  border: 2px solid #ddd !important;
-  background: #fdfdfd !important;
-  font-size: 1rem !important;
-  width: 70% !important;
-  margin: 12px auto !important; 
-  display: block !important; 
-
+    width: 70% !important;
+    padding: 14px !important;
+    margin: 12px auto !important;
+    border-radius: 12px !important;
+    border: 2px solid #ddd !important;
+    background: #fdfdfd !important;
+    font-size: 1rem !important;
+    display: block !important;
 }
-
 
 .quote-popup .submit-btn {
-  padding: 16px !important;
-  width: 100% !important;
-  background: #720909 !important;
-  color: #fff !important;
-  border-radius: 12px !important;
-  border: none !important;
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-  cursor: pointer !important;
-  margin-top: 15px !important;
+    padding: 16px !important;
+    width: 100% !important;
+    background: #720909 !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    margin-top: 15px !important;
 }
 
-/*SERVICES PAGE CODE*/
+/* ===========================
+   SERVICES PAGE BLOCKS
+=========================== */
+
+.service-block {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 450px;
+    padding: 40px;
+    border-radius: 0;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
 
 .service-block.service-wedding {
     background-image: url("../media/wedding1.jpg");
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
+
 .service-block.service-corporate {
     background-image: url("../media/corp_party1.jpg");
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .service-block.service-private {
     background-image: url("../media/priv_party1.jpg");
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
-
 .services-bg {
-    background-image: url("../media/bar.jpg"); 
+    background-image: url("../media/bar.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
+    padding: 80px 0;
 }
 
-
-
-
-
 .services-page {
-    padding-bottom: 150px;            
     background: #faf8f3;
+    padding-bottom: 150px;
 }
 
 .services-page h3 {
     text-align: center;
     font-size: 6rem;
     margin: 50px 0 20px;
-    
+}
+
+.services-page h5 {
+    font-size: 3rem;
+    color: #720909;
 }
 
 .column {
@@ -703,7 +633,7 @@ img {
 }
 
 .column div {
-    background: #bbbbbb;
+    background: #bbb;
     padding: 25px;
     text-align: center;
     border-radius: 14px;
@@ -714,52 +644,19 @@ img {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-.services-page h5 {
-    font-size: 3rem;
-    color: #720909;
-}
 
-.service-block p {
-    color: #ffffff;
-}
-
-.services_page h3 {
-    font-size: 5rem;
-}
-
-.service-block {
-    position: relative;
-    width: 100vw;          
-    margin-left: calc(-50vw + 50%);  
-    height: 450px;
-    padding: 40px;
-    border-radius: 0;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
-    justify-content: center;   
-    align-items: center;       
-
-}
-
-/*about page map*/
+/* ===========================
+   MAP SECTION (About page)
+=========================== */
 
 .map-section {
-  padding: 80px 40px;
-  background-color: #ffffff;
-  text-align: center;
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
 }
 
 .map-section h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-  color: #720909;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #720909;
 }
-
