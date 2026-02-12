@@ -1,12 +1,26 @@
-/* ===========================
-   GLOBAL / BASE STYLES
-=========================== */
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../media/fonts/newfont.ttf")format("truetype")
+
+    
+}
+
+@font-face {
+    font-family: "PlayfairDisplaypara";
+    src: url("../media/fonts/para.otf") format("truetype")
+
+    
+}
 
 body {
     padding-top: 120px;
-    font-family: 'Cormorant Garamond', serif;
+    
+
 }
 
+p {
+    font-family: "PlayfairDisplaypara", serif;
+}
 img {
     width: 500px;
     height: auto;
@@ -14,9 +28,7 @@ img {
     margin: 0 auto;
 }
 
-/* ===========================
-   NAVIGATION BAR
-=========================== */
+/*NAVIGATION BAR*/
 
 .nav-logo {
     height: 100px;
@@ -38,13 +50,15 @@ img {
 }
 
 .nav_bar a {
-    font-size: 30px;
+    font-size: 60px;
     text-decoration: none;
     color: #4a2f2f;
     margin: 0 12px;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
+    
+    
 }
 
 .nav_bar a:hover {
@@ -76,11 +90,13 @@ img {
     background-color: darkgoldenrod;
 }
 
+
 .nav-Rside {
     display: flex;
     align-items: center;
     gap: 25px;
 }
+
 
 .nav-links {
     display: flex;
@@ -90,6 +106,7 @@ img {
     height: 30%;
 }
 
+
 .nav-links a {
     text-decoration: none;
     color: #333;
@@ -98,9 +115,7 @@ img {
     transition: 0.3s ease;
 }
 
-/* ===========================
-   BUTTONS
-=========================== */
+/*BUTTONS */
 
 button {
     font-size: 15px;
@@ -132,9 +147,8 @@ button {
     font-size: large;
 }
 
-/* ===========================
-   HERO SECTION
-=========================== */
+/*HERO SECTION*/
+
 
 .hero-section {
     min-height: 50vh;
@@ -146,15 +160,37 @@ button {
 }
 
 .intro {
-    padding: 130px 0 230px;
+    
     background-image: url("../media/front2.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
 }
 
+.contact {
+
+    background-image: url("../media/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.contact h1 {
+    font-size: 7rem;
+
+    font-family: "PlayfairDisplay", serif;
+    color: #7b1e1e; }
+
+.contact p{
+    font-size: 1rem;
+    color: black; 
+    margin-bottom: 300px;
+
+    }
+
+
 .intro p {
     font-size: 1.2rem;
+   
 }
 
 .hero-content {
@@ -169,6 +205,7 @@ button {
 
 .hero-section h1 {
     font-size: 3rem;
+    
 }
 
 .hero-buttons {
@@ -189,15 +226,18 @@ button {
     color: #7b1e1e;
 }
 
-/* ===========================
-   TESTIMONIALS
-=========================== */
+
+
+/*TESTIMONIALS*/
+
+
 
 .testimonial-heading {
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
     color: #6e0e0e;
+    font-family: "PlayfairDisplay", serif;
 }
 
 .hero-section.testimonials {
@@ -221,6 +261,7 @@ button {
     padding: 50px 20px;
 }
 
+
 .testimonials-grid .testimonial {
     background: rgba(255, 255, 255, 0.8);
 }
@@ -233,15 +274,13 @@ button {
 .e2 { margin-top: 20px; }
 .e3 { margin-bottom: 60px; }
 
-/* Quote button in testimonials */
+
 .quote_btn_testimonial {
     margin: 20px auto 0;
     opacity: 100%;
 }
 
-/* ===========================
-   SERVICES
-=========================== */
+/*SERVICES */
 
 .services {
     text-align: center;
@@ -279,6 +318,7 @@ button {
     box-shadow: none;
 }
 
+
 .element h3 {
     margin-bottom: 12px;
     color: #000;
@@ -290,9 +330,7 @@ button {
     color: #555;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/* FOOTER*/
 
 .footer {
     background-color: #efe1d9;
@@ -405,9 +443,7 @@ button {
     cursor: pointer;
 }
 
-/* ===========================
-   ABOUT PAGE
-=========================== */
+/* ABOUT PAGE */
 
 .about {
     background-color: #fff;
@@ -506,9 +542,7 @@ button {
     margin-bottom: 10px;
 }
 
-/* ===========================
-   QUOTE POPUP
-=========================== */
+/* QUOTE POPUP */
 
 .overlay {
     position: fixed;
@@ -562,9 +596,7 @@ button {
     margin-top: 15px !important;
 }
 
-/* ===========================
-   SERVICES PAGE BLOCKS
-=========================== */
+/*  SERVICES PAGE BLOCKS*/
 
 .service-block {
     position: relative;
@@ -589,16 +621,19 @@ button {
 .service-block.service-wedding {
     background-image: url("../media/wedding1.jpg");
     color: #fff;
+    font-family: "PlayfairDisplay", serif;
 }
 
 .service-block.service-corporate {
     background-image: url("../media/corp_party1.jpg");
     color: #fff;
+    font-family: "PlayfairDisplay", serif;
 }
 
 .service-block.service-private {
     background-image: url("../media/priv_party1.jpg");
     color: #fff;
+    font-family: "PlayfairDisplay", serif;
 }
 
 .services-bg {
@@ -645,9 +680,7 @@ button {
     margin-bottom: 10px;
 }
 
-/* ===========================
-   MAP SECTION (About page)
-=========================== */
+/*tHe MAP SECTION  */
 
 .map-section {
     padding: 80px 40px;
@@ -659,4 +692,95 @@ button {
     font-size: 40px;
     margin-bottom: 30px;
     color: #720909;
+}
+
+
+/*THE CONTACT PAGE*/
+/* Request a Quote Section */
+
+.team-grid .team-card {
+    opacity: 85%;
+
+}
+
+
+
+
+.quote-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #f9f7f3;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+
+.quote-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #7a5c42;
+    letter-spacing: 1px;
+}
+
+.quote-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Form Layout */
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input,
+.form-row select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d7d2c8;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fff;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Button */
+.quote-btn {
+    background: linear-gradient(135deg, #c49a6c, #a57a4f);
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.quote-btn:hover {
+    background: linear-gradient(135deg, #a57a4f, #8b653c);
+    transform: scale(1.03);
+}
+
+/* Responsive Behaviour */
+@media (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+    }
 }
