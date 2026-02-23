@@ -778,9 +778,229 @@ textarea {
     transform: scale(1.03);
 }
 
-/* Responsive Behaviour */
+
 @media (max-width: 700px) {
     .form-row {
         flex-direction: column;
+    }
+}
+
+
+
+.hero-section.packages {
+    background-image: url("../media/packages.jpg") ;
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    min-height: 50vh;
+}
+
+
+.services {
+    padding: 80px 0;
+    background: #f7f7f7;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #222;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #b8860b; /* Gold accent */
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+/* Grid Layout */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card Style */
+.package-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 6px solid #ad4907;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Hover Effect */
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 26px rgba(0,0,0,0.12);
+}
+
+/* Highlight (Silver) */
+.package-card.highlight {
+    border-top-color: silver;
+}
+
+/* Premium (Gold) */
+.package-card.premium {
+    border-top-color: #d4af37; /* gold */
+    background: #fff9e6;
+}
+
+/* Titles */
+.package-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Features List */
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.package-card ul li {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Tick icon */
+.package-card ul li::before {
+    content: "✔";
+    color: #b8860b;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Price */
+.price {
+    font-size: 1.3rem;
+    margin: 15px 0 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+.quote-btn.small {
+    padding: 10px 22px;
+    background: #b8860b;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.quote-btn.small:hover {
+    background: #8f6c00;
+}
+
+.packages h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+     font-family: "PlayfairDisplay", serif;
+}
+
+/* ============================
+   COMPARISON TABLE SECTION
+============================ */
+
+.comparison-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.comparison-table {
+    overflow-x: auto; /* Mobile-friendly */
+    margin-top: 30px;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Table Header */
+.comparison-table thead {
+    background: linear-gradient(90deg, #680303, #6b0404);
+    color: white;
+}
+
+.comparison-table th {
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Body Rows */
+.comparison-table td {
+    padding: 16px;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Left Column Label Styling */
+.comparison-table tbody td:first-child {
+    font-weight: 600;
+    text-align: left;
+    background: #faf6e8; /* subtle gold tint */
+    color: #222;
+}
+
+/* Alternating Row Colors */
+.comparison-table tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+/* Hover Row */
+.comparison-table tbody tr:hover {
+    background: #fff7d1;
+    transition: 0.25s ease-in-out;
+}
+
+/* Column Highlights */
+.comparison-table td:nth-child(2) {
+    border-left: 3px solid #cd7f32; /* Bronze */
+}
+.comparison-table td:nth-child(3) {
+    border-left: 3px solid silver;
+}
+.comparison-table td:nth-child(4) {
+    border-left: 3px solid #d4af37; /* Gold */
+}
+
+/* Rounded Corners for First/Last cells on desktop */
+.comparison-table table {
+    border-radius: 12px;
+}
+
+/* Mobile Improvements */
+@media (max-width: 768px) {
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px;
+        font-size: 0.9rem;
     }
 }
