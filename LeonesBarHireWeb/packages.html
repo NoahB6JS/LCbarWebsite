@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leones Bar Hire</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+
+<body>
+
+    <nav class="nav_bar">
+
+
+    <a href="index.html" class="nav-logo-link">
+        <img src="media/LC_logo.png" alt="Leones Catering Logo" class="nav-logo">
+    </a>
+
+    <div class="nav-Rside">
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="packages.html">Packages</a>
+            <a href="Services.html">Services</a>
+            <a href="Testimonials.html">Testimonials</a>
+        </div>
+
+        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
+    </div>
+
+</nav>
+
+
+<!-- main body code -->
+<div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
+
+<div class="quote-popup" id="quotePopup">
+  <button class="close-btn" onclick="closeQuote()">x</button>
+  <h2>Get A Quote</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Tell us about your event..." required></textarea>
+    <button type="submit" class="quote_btn">Send Request</button>
+  </form>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section packages">
+    <div class="container">
+        <h1>Event Packages & Pricing</h1>
+        
+        <button class="quote_btn" onclick="openQuote()">Request A personalised Quote</button>
+    </div>
+</section>
+
+
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Our Packages</h2>
+
+        <div class="package-grid">
+
+            <!-- Bronze Package -->
+            <div class="service-item package-card">
+                <h3 class="package-title">Bronze Package</h3>
+                <ul class="element">
+                    <li>BBQ catering for up to 50 guests</li>
+                    <li>2 serving staff included</li>
+                    <li>Basic setup & serving area</li>
+                </ul>
+                <p class="price">From £XXX</p>
+                <a href="#quote" class="quote-btn small">Enquire Now</a>
+            </div>
+
+            <!-- Silver Package -->
+            <div class="service-item package-card highlight">
+                <h3 class="package-title">Silver Package</h3>
+                <ul class="element">
+                    <li>BBQ or buffet catering</li>
+                    <li>3 professional serving staff</li>
+                    <li>Optional mobile bar add-on</li>
+                    <li>Enhanced presentation</li>
+                </ul>
+                <p class="price">From £XXX</p>
+                <a href="#quote" class="quote-btn small">Enquire Now</a>
+            </div>
+
+            <!-- Gold Wedding Package -->
+            <div class="service-item package-card premium">
+                <h3 class="package-title">Gold Wedding Package</h3>
+                <ul class="element">
+                    <li>Full custom catering service</li>
+                    <li>Premium mobile bar included</li>
+                    <li>Bespoke wedding menu</li>
+                    <li>Premium décor & setup</li>
+                </ul>
+                <p class="price">From £XXX</p>
+                <a href="#quote" class="quote-btn small">Enquire Now</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="comparison-section">
+    <div class="container">
+        <h2 class="section-title">Package Comparison</h2>
+
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Features</th>
+                        <th>Bronze</th>
+                        <th>Silver</th>
+                        <th>Gold Wedding</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Guest Capacity</td>
+                        <td>Up to 50</td>
+                        <td>120</td>
+                        <td>200+</td>
+                    </tr>
+                    <tr>
+                        <td>Menu Options</td>
+                        <td>BBQ</td>
+                        <td>BBQ or Buffet</td>
+                        <td>Fully Custom Menu</td>
+                    </tr>
+                    <tr>
+                        <td>Serving Staff</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>5+</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Bar</td>
+                        <td>Add-On</td>
+                        <td>Optional</td>
+                        <td>Included</td>
+                    </tr>
+                    <tr>
+                        <td>Setup Quality</td>
+                        <td>Basic</td>
+                        <td>Enhanced</td>
+                        <td>Premium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="quote-section" id="quote">
+    <div class="container">
+        <h2>Not sure which package suits you?</h2>
+        <p class="quote-subtitle">Get a personalised quote for your event.</p>
+        <a href="/contact" class="quote-btn">Request Your Quote</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+    <section class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-nav">
+                <img src="media/LC_logo.png" alt="Leon's Catering Services logo">
+                <nav>
+                    <nav id="footer-links">
+                        <a href="#About">About</a>
+                        <a href="#Contact">Contact</a>
+                        <a href="#Packages">Gallery</a>
+                        <a href="#Quotes">Quotes</a>
+                        <a href="#Services">Services</a>
+                        <a href="#Testimonials">Testimonials</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get in Touch</h4>
+                <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Ayelsbury, Buckinghamshire, United Kingdom</li>
+                    <li>+44 7718 049283</li>
+                    <li>leonescatering@outlook.com</li>
+
+
+                </ul>   
+            </div>
+        </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy; 2026 Leone's Catering Services. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+    </div>
+
+    </section>
+</footer>
+
+<!--JAVASCRIPT LINK TO SCRIPT-->
+<script src="javascript/main.js"></script>
+
+</body>
+</html>
