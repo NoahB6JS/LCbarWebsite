@@ -14,7 +14,6 @@
 
 body {
     padding-top: 120px;
-    
 
 }
 
@@ -234,9 +233,9 @@ button {
 
 .testimonial-heading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
-    color: #6e0e0e;
+    color: #ebebeb;
     font-family: "PlayfairDisplay", serif;
 }
 
@@ -282,6 +281,11 @@ button {
 
 /*SERVICES */
 
+.services-page {
+    padding-top: 10px; /* or whatever spacing you want */
+}
+
+
 .services {
     text-align: center;
 }
@@ -291,10 +295,10 @@ button {
 }
 
 .service-item {
-    padding: 5% 0;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    
 }
 
 .service-item img {
@@ -445,9 +449,11 @@ button {
 
 /* ABOUT PAGE */
 
-.about {
-    background-color: #fff;
+.about-page {
+    background-color: ;
 }
+
+
 
 .about-intro {
     text-align: center;
@@ -603,7 +609,7 @@ button {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     height: 450px;
-    padding: 40px;
+    
     border-radius: 0;
     overflow: hidden;
 
