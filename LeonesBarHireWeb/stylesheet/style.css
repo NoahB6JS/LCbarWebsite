@@ -1,12 +1,11 @@
 @font-face {
     font-family: "PlayfairDisplay";
-    src: url("../media/fonts/newfont.ttf")format("truetype")
+    src: url("../media/fonts/newfont.ttf")format("truetype")}
 
-    
-}
+
 
 @font-face {
-    font-family: "PlayfairDisplaypara";
+    font-family: "taskbar";
     src: url("../media/fonts/para.otf") format("truetype")
 
     
@@ -56,7 +55,7 @@ img {
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
-    
+    font-family: "taskbar", serif;
     
 }
 
@@ -77,7 +76,7 @@ img {
     transform-origin: right;
     transition: transform 0.3s ease;
 }
-
+h5
 .nav_bar a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
@@ -167,13 +166,14 @@ button {
 }
 
 .contact {
-
+    
     background-image: url("../media/contact.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
 }
 .contact h1 {
+    margin-top: 14%;
     font-size: 7rem;
 
     font-family: "PlayfairDisplay", serif;
@@ -232,10 +232,14 @@ button {
 
 
 .testimonial-heading {
+    margin-bottom: 15%;
     text-align: center;
     font-size: 5rem;
     font-weight: 700;
     color: #ebebeb;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #630a0a;
     font-family: "PlayfairDisplay", serif;
 }
 
@@ -449,9 +453,6 @@ button {
 
 /* ABOUT PAGE */
 
-.about-page {
-    background-color: ;
-}
 
 
 
@@ -709,8 +710,9 @@ button {
 
 }
 
-
-
+.contact {
+    background-color: #555;
+}
 
 .quote-section {
     max-width: 900px;

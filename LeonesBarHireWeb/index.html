@@ -51,11 +51,10 @@
 </div>
 
 
-<!-- EmailJS library -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-  emailjs.init("RoQAL6t0qrXgu4K3k");   // <-- replace
+  emailjs.init("RoQAL6t0qrXgu4K3k");   
 </script>
 
 <script>
@@ -69,15 +68,15 @@ function closeQuote() {
   document.getElementById("quotePopup").style.display = "none";
 }
 
-// Send email using EmailJS
+
 function sendQuote(e) {
-  e.preventDefault(); // Stop refresh
+  e.preventDefault(); 
 
   const name = document.getElementById("q_name").value;
   const email = document.getElementById("q_email").value;
   const message = document.getElementById("q_message").value;
 
-  emailjs.send("service_58ycelq", "template_zbmmr2i", {   // <-- replace these
+  emailjs.send("service_58ycelq", "template_zbmmr2i", {  
       from_name: name,
       from_email: email,
       message: message
