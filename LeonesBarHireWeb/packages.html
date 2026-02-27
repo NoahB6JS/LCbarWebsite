@@ -61,53 +61,42 @@
 </section>
 
 
-<section class="services">
-    <div class="container">
-        <h2 class="section-title">Our Packages</h2>
+<div class="package-grid">
 
-        <div class="package-grid">
-
-            <!-- Bronze Package -->
-            <div class="service-item package-card">
-                <h3 class="package-title">Bronze Package</h3>
-                <ul class="element">
-                    <li>BBQ catering for up to 50 guests</li>
-                    <li>2 serving staff included</li>
-                    <li>Basic setup & serving area</li>
-                </ul>
-                <p class="price">From £120</p>
-                <a href="#quote" class="quote-btn small">Enquire Now</a>
-            </div>
-
-            <!-- Silver Package -->
-            <div class="service-item package-card highlight">
-                <h3 class="package-title">Silver Package</h3>
-                <ul class="element">
-                    <li>BBQ or buffet catering</li>
-                    <li>3 professional serving staff</li>
-                    <li>Optional mobile bar add-on</li>
-                    <li>Enhanced presentation</li>
-                </ul>
-                <p class="price">From £200</p>
-                <a href="#quote" class="quote-btn small">Enquire Now</a>
-            </div>
-
-            <!-- Gold Wedding Package -->
-            <div class="service-item package-card premium">
-                <h3 class="package-title">Gold Wedding Package</h3>
-                <ul class="element">
-                    <li>Full custom catering service</li>
-                    <li>Premium mobile bar included</li>
-                    <li>Bespoke wedding menu</li>
-                    <li>Premium décor & setup</li>
-                </ul>
-                <p class="price">From £330</p>
-                <a href="#quote" class="quote-btn small">Enquire Now</a>
-            </div>
-
-        </div>
+    <div class="package-card bronze">
+        <h3>Basic Package</h3>
+        <p class="price">£220</p>
+        <hr>
+        <ul>
+            <li>BBQ catering up to 50 guests</li>
+            <li>2 serving staff</li>
+            <li>Basic setup & serving area</li>
+        </ul>
     </div>
-</section>
+
+    <div class="package-card silver">
+        <h3>Silver Package</h3>
+        <p class="price">£499</p>
+        <hr>
+        <ul>
+            <li>Up to 75 guests</li>
+            <li>Premium food options</li>
+            <li>Decor & presentation upgrade</li>
+        </ul>
+    </div>
+
+    <div class="package-card gold">
+        <h3>Gold Package</h3>
+        <p class="price">£699</p>
+        <hr>
+        <ul>
+            <li>Up to 120 guests</li>
+            <li>Luxury menu choices</li>
+            <li>Full bar service</li>
+        </ul>
+    </div>
+
+</div>
 
 <!-- Comparison Table -->
 <section class="comparison-section">
@@ -166,7 +155,7 @@
     <div class="container">
         <h2>Not sure which package suits you?</h2>
         <p class="quote-subtitle">Get a personalised quote for your event.</p>
-        <a href="/contact" class="quote-btn">Request Your Quote</a>
+        <a class="quote-btn"  onclick="openQuote()">Request Your Quote</a>
     </div>
 </section>
 
