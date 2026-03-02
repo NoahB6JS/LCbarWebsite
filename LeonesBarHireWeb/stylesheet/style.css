@@ -2,7 +2,10 @@
 /*FONTS FOR TITLES AND NAVIGATION*/
 @font-face {
     font-family: "PlayfairDisplay";
-    src: url("../media/fonts/newfont.ttf")format("truetype")}
+    src: url("../media/fonts/newfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -19,15 +22,21 @@
 
 /*GENERAL STYLES FOR BODY PARAGRAPHS AND IMAGES*/
 
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
+    background: #fff;
+    line-height: 1.5;
     padding-top: 120px;
-
 }
 
-p {
-    font-family: "PlayfairDisplaypara", serif;
-        
-}
+
 
 img {
     width: 500px;
@@ -65,7 +74,6 @@ img {
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
-    font-family: "taskbar", serif;
     
 }
 
@@ -517,11 +525,6 @@ button {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.team-card {
-    background-color: var(--brand-bg);
-    padding: 10%;
-    border-radius: 10%;
-}
 
 .about-card h3 {
     color: #6d3636;
@@ -534,7 +537,7 @@ button {
 
 .about-list li {
     margin-bottom: 10px;
-    color: var( --text-dark);
+    color: black;
 }
 
 /* TEAM SECTION ON ABOUT PAGE */
@@ -592,44 +595,44 @@ button {
 }
 
 .quote-popup {
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    background: var(--brand-bg) !important;
-    border: 3px solid var(--brand-red) !important;
-    padding: 40px !important;
-    border-radius: 40% !important;
-    width: 95% !important;
-    max-width: 450px !important;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.45) !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--brand-bg);
+    border: 3px solid var(--brand-red);
+    padding: 40px;
+    border-radius: 40%;
+    width: 95%;
+    max-width: 450px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.45);
     display: none;
-    z-index: 1001 !important;
-    font-family: "Poppins", sans-serif !important;
+    z-index: 1001;
+
 }
 
 .quote-popup input,
 .quote-popup textarea {
-    width: 70% !important;
-    padding: 14px !important;
-    margin: 12px auto !important;
-    border-radius: 12px !important;
-    border: 2px solid var(--brand-bg) !important;
-    background: var(--brand-bg) !important;
-    font-size: 1rem !important;
-    display: block !important;
+    width: 70%;
+    padding: 14px;
+    margin: 12px auto;
+    border-radius: 12px;
+    border: 2px solid var(--brand-bg);
+    background: var(--brand-bg);
+    font-size: 1rem;
+    display: block;
 }
 
 .quote-popup .submit-btn {
-    padding: 16px !important;
-    width: 100% !important;
-    background:  var(--brand-red) !important;
-    color: var(--brand-bg) !important;
-    border-radius: 12px !important;
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-    cursor: pointer !important;
-    margin-top: 15px !important;
+    padding: 16px;
+    width: 100%;
+    background:  var(--brand-red);
+    color: var(--brand-bg);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 
@@ -759,7 +762,6 @@ button {
     background: var(--brand-bg);
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    font-family: "Georgia", serif;
     text-align: center;
 }
 
@@ -801,7 +803,7 @@ textarea {
     border-radius: 10px;
     font-size: 1rem;
     background: var(--brand-bg);
-    font-family: inherit;
+
 }
 
 textarea {
@@ -989,7 +991,7 @@ textarea {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 14px rgba(0,0,0,0.10);
-    font-family: 'Segoe UI', sans-serif;
+
 }
 
 

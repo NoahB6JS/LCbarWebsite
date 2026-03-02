@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- MAIN PAGE FOR LEONES CATERING & BAR HIRE -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leones Bar Hire</title>
     <link rel="stylesheet" href="stylesheet/style.css">
-
-    <style>
-        /* Make sure both popups + overlays are hidden on load */
-        .quote-popup,
-        .quote-planner,
-        .overlay {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
 
+
+<!--NAVIAGTION BAR-->
 <nav class="nav_bar">
 
     <a href="index.html" class="nav-logo-link">
         <img src="media/LC_logo.png" alt="Leones Catering Logo" class="nav-logo">
     </a>
-
+    <!-- NAVIGATION LINKS -->
     <div class="nav-Rside">
         <div class="nav-links">
             <a href="about.html">About</a>
@@ -50,7 +43,7 @@
 <div class="quote-popup" id="quotePopup">
   <button class="close-btn" onclick="closeQuote()">x</button>
   <h2>Get A Quote</h2>
-
+<!-- form action and method can be added here for backend processing -->
   <form id="quoteForm" onsubmit="sendQuote(event)">
     <input type="text" id="q_name" placeholder="Your Name" required>
     <input type="email" id="q_email" placeholder="Your Email" required>
@@ -69,7 +62,7 @@
 
         <label>Number of Guests:</label>
         <input type="number" id="guests" min="1" value="50">
-
+        <!-- The value can be adjusted or made dynamic based on typical event sizes -->
         <label>Select Food Package:</label>
         <select id="foodPackage">
             <option value="15">Basic (£15 per person)</option>
@@ -111,7 +104,7 @@
 
 
 
-    
+    <!-- ABOUT US SECTION -->
     <section class="hero-section">
         <div class="hero-content">
             <div class="text-box">
@@ -130,12 +123,12 @@
         </div>
     </section>
 
-    
+    <!-- SERVICES SECTION -->
     <section class="hero-section services services-bg">
     </section>
     
     <section class="service-item">
-
+<!-- all service items can be added here with the same structure -->
     <div class="element photo">
         <h3>Weddings</h3>
         <p>A premium bar service tailored to your special day.</p>
@@ -163,7 +156,7 @@
 </section>
 
 
-
+<!--  FOOTER SECTION -->
 
 <footer class="footer">
 
