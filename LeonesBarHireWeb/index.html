@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leones Bar Hire</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+
+    <style>
+        /* Make sure both popups + overlays are hidden on load */
+        .quote-popup,
+        .quote-planner,
+        .overlay {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    
-<nav class="nav_bar">
 
+<nav class="nav_bar">
 
     <a href="index.html" class="nav-logo-link">
         <img src="media/LC_logo.png" alt="Leones Catering Logo" class="nav-logo">
@@ -26,18 +34,19 @@
             <a href="testimonials.html">Testimonials</a>
         </div>
 
+        <!-- POPUP 1 BUTTON -->
         <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
     </div>
 
 </nav>
 
 
-
-
-
-
+<!-- OVERLAYS FOR BOTH POPUPS -->
 <div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
+<div class="overlay" id="quoteOverlay1" onclick="closeQuotePlanner()"></div>
 
+
+<!-- POPUP 1: EMAIL QUOTE FORM -->
 <div class="quote-popup" id="quotePopup">
   <button class="close-btn" onclick="closeQuote()">x</button>
   <h2>Get A Quote</h2>
@@ -51,60 +60,56 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<!-- POPUP 2: INSTANT QUOTE PLANNER -->
+<section id="quotePopup1" class="quote-planner">
+    <button id="closeQuoteBtn1" class="close-btn" onclick="closeQuotePlanner()">x</button>
+    <h2>Instant Quote Planner</h2>
 
-<script>
-  emailjs.init("RoQAL6t0qrXgu4K3k");   
-</script>
+    <div class="quote-box">
 
-<script>
-function openQuote() {
-  document.getElementById("quoteOverlay").style.display = "block";
-  document.getElementById("quotePopup").style.display = "block";
-}
+        <label>Number of Guests:</label>
+        <input type="number" id="guests" min="1" value="50">
 
-function closeQuote() {
-  document.getElementById("quoteOverlay").style.display = "none";
-  document.getElementById("quotePopup").style.display = "none";
-}
+        <label>Select Food Package:</label>
+        <select id="foodPackage">
+            <option value="15">Basic (£15 per person)</option>
+            <option value="25">Premium (£25 per person)</option>
+            <option value="40">Luxury (£40 per person)</option>
+        </select>
 
-
-function sendQuote(e) {
-  e.preventDefault(); 
-
-  const name = document.getElementById("q_name").value;
-  const email = document.getElementById("q_email").value;
-  const message = document.getElementById("q_message").value;
-
-  emailjs.send("service_58ycelq", "template_zbmmr2i", {  
-      from_name: name,
-      from_email: email,
-      message: message
-  })
-  .then(() => {
-      alert("Your quote request has been sent!");
-      closeQuote();
-      document.getElementById("quoteForm").reset();
-  })
-  .catch((err) => {
-      alert("Error sending message.");
-      console.error(err);
-  });
-}
-</script>
-
-
-
-    <header>
-    <section class="hero-section intro">
-        <h1>Luxury Mobile Bar Hire & Catering For Any Occasion</h1>
-        <p>Weddings  .  Private Parties  .  Corporate Events  .  Festivals </p>
-        <div class="hero-buttons">
-        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
-        <button>View Our Bar Packages</button> 
+        <label>Add-on Options:</label>
+        <div class="addons">
+            <label><input type="checkbox" class="addon" value="150"> Bar Service (£150)</label>
+            <label><input type="checkbox" class="addon" value="200"> Table Service (£200)</label>
+            <label><input type="checkbox" class="addon" value="120"> Dessert Buffet (£120)</label>
         </div>
-    </section>
-    </header>
+
+        <button id="calculate">Generate Quote</button>
+
+        <h3>Total Price: £<span id="totalPrice">0</span></h3>
+    </div>
+</section>
+
+
+
+<!-- HERO SECTION -->
+<header>
+<section class="hero-section intro">
+    <h1>Luxury Mobile Bar Hire & Catering For Any Occasion</h1>
+    <p>Weddings  .  Private Parties  .  Corporate Events  .  Festivals </p>
+    <div class="hero-buttons">
+
+        <!-- BUTTON FOR POPUP 1 -->
+        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
+
+        <!-- BUTTON FOR POPUP 2 -->
+        <button id="openQuoteBtn1" onclick="openQuotePlanner()">View Our Bar Packages</button>
+
+    </div>
+</section>
+</header>
+
+
 
     
     <section class="hero-section">
