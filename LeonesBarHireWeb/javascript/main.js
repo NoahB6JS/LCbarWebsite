@@ -35,3 +35,15 @@ document.getElementById("calculate").addEventListener("click", function () {
     addons.forEach(addon => {total += parseFloat(addon.value);});
     document.getElementById("totalPrice").textContent = total.toFixed(2);
 });
+
+//SLIDESHOW IMAGE MOVING ACROSS FRONT PAGE
+let current = 0;
+  const slides = document.getElementById('slides');
+  const total = slides.children.length;
+
+  function move(direction) {
+    current = (current + direction + total) % total;
+    slides.style.transform = `translateX(-${current * 100}%)`;
+  }
+  //AUTOMATIC SLIDE MOVEMENT EVERY 3 SECONDS
+setInterval(() => move(1), 3000);
