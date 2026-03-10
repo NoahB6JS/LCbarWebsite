@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- MAIN PAGE FOR LEONES CATERING & BAR HIRE -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leones Bar Hire</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+
+<body>
+
+
+<!--NAVIAGTION BAR-->
+<nav class="nav_bar">
+
+    <a href="index.html" class="nav-logo-link">
+        <img src="media/LC_logo.png" alt="Leones Catering Logo" class="nav-logo">
+    </a>
+    <!-- NAVIGATION LINKS -->
+    <div class="nav-Rside">
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="packages.html">Packages</a>
+            <a href="services.html">Services</a>
+            <a href="testimonials.html">Testimonials</a>
+        </div>
+
+        <!-- POPUP 1 BUTTON -->
+        <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
+    </div>
+
+</nav>
+
+
+<!--OVERLAYS FOR BOTH POPUPS -->
+<div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
+<div class="overlay" id="quoteOverlay1" onclick="closeQuotePlanner()"></div>
+
+
+<!--EMAIL QUOTE FORM -->
+<div class="quote-popup" id="quotePopup">
+  <button class="close-btn" onclick="closeQuote()">x</button>
+  <h2>Get A Quote</h2>
+<!-- form action and method can be added here for backend processing -->
+  <form id="quoteForm" onsubmit="sendQuote(event)">
+    <input type="text" id="q_name" placeholder="Your Name" required>
+    <input type="email" id="q_email" placeholder="Your Email" required>
+    <textarea id="q_message" placeholder="Tell us about your event..." required></textarea>
+    <button type="submit" class="quote_btn">Send Request</button>
+  </form>
+</div>
+
+
+<!--  INSTANT QUOTE PLANNER -->
+<section id="quotePopup1" class="quote-planner">
+    <button id="closeQuoteBtn1" class="close-btn" onclick="closeQuotePlanner()">x</button>
+    <h2>Instant Quote Planner</h2>
+
+    <div class="quote-box">
+
+        <label>Number of Guests:</label>
+        <input type="number" id="guests" min="1" value="50">
+        <!-- The value can be adjusted or made dynamic based on typical event sizes -->
+        <label>Select Food Package:</label>
+        <select id="foodPackage">
+            <option value="15">Basic (£15 per person)</option>
+            <option value="25">Premium (£25 per person)</option>
+            <option value="40">Luxury (£40 per person)</option>
+        </select>
+
+        <label>Add-on Options:</label>
+        <div class="addons">
+            <label><input type="checkbox" class="addon" value="150"> Bar Service (£150)</label>
+            <label><input type="checkbox" class="addon" value="200"> Table Service (£200)</label>
+            <label><input type="checkbox" class="addon" value="120"> Dessert Buffet (£120)</label>
+        </div>
+
+        <button id="calculate">Generate Quote</button>
+
+        <h3>Total Price: £<span id="totalPrice">0</span></h3>
+    </div>
+</section>
+
+
+<!-- THE PHOTO SLIDESHOW FOLLOWED BY THE TITLE AND BUTTONS LAYERD ON TOP-->
+<div class="slideshow">
+  <div class="slides" id="slides">
+    <div class="slide"><img src="media/wedding1.jpg" alt="Slide 1"></div>
+    <div class="slide"><img src="media/front2.jpg" alt="Slide 2"></div>
+    <div class="slide"><img src="media/wedding2.jpg" alt="Slide 3"></div>
+  </div>
+
+<!-- MAIN TITLE TOO PAGE -->
+  <div class="carousel-title">
+    <h1>Luxury Mobile Bar Hire & Catering For Any Occasion</h1>
+    <p>Weddings . Private Parties . Corporate Events . Festivals</p>
+    <div class="hero-buttons">
+      <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
+      <button id="openQuoteBtn1" onclick="openQuotePlanner()">View Our Bar Packages</button>
+    </div>
+  </div>
+
+</div>
+
+
+    <!-- ABOUT US SECTION -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="text-box">
+                <!-- INTRODUCTION TITLE AND PARTAGRAPH -->
+                <h2>Welcome To Leones Mobile Bar Hire & Catering</h2>
+                <p>
+                    We provide full-service catering tailored to your event, whether it's an intimate gathering or a large celebration.
+                    Our menus are thoughtfully crafted using fresh, high-quality ingredients to deliver flavor you'll remember. From planning
+                    to presentation, we focus on the details that make each event run smoothly. Our experienced team is committed to reliable
+                    service and seamless execution. With a passion for good food and genuine hospitality, we help bring your vision to life.
+                </p>
+                <button class="quote_btn" onclick="openQuote()">Get A Quote</button>
+                </div>
+                <div class="image-box">
+                <img src="media/index_1.jpg" alt="Dining table with glasses photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="hero-section services services-bg">
+    </section>
+    
+    <section class="service-item">
+<!-- all service items can be added here with the same structure -->
+    <div class="element photo">
+        <h3>Weddings</h3>
+        <p>A premium bar service tailored to your special day.</p>
+    </div>
+
+    <div class="element photo">
+        <h3>Private Parties</h3>
+        <p>Birthdays, anniversaries, and other celebrations.</p>
+    </div>
+
+    <div class="element photo">
+        <h3>Corporate Events</h3>
+        <p>Impress clients and colleagues with a professional bar setup.</p>
+    </div>
+
+    <div class="element photo">
+        <h3>Festivals</h3>
+        <p>Reliable, high-volume service for large crowds.</p>
+    </div>
+
+    <div class="element photo different">
+        <img src="media/hygiene_rating.png" alt="Hygiene Rating">
+    </div>
+
+</section>
+
+
+<!--  FOOTER SECTION -->
+
+<footer class="footer">
+
+    <section class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-nav">
+                <img src="media/LC_logo.png" alt="Leone's Catering Services logo">
+                <nav>
+                    <!-- FOOTER LINKS TO PAGES-->
+                    <nav id="footer-links">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="packages.html">Packages</a>
+                        <a href="services.html">Services</a>
+                        <a href="testimonials.html">Testimonials</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get in Touch</h4>
+                <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Ayelsbury, Buckinghamshire, United Kingdom</li>
+                    <li>+44 7718 049283</li>
+                    <li>leonescatering@outlook.com</li>
+
+
+                </ul>   
+            </div>
+        </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy; 2026 Leone's Catering Services. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+    </div>
+
+    </section>
+</footer>
+
+<!--JAVASCRIPT LINK TO SCRIPT-->
+<script src="javascript/main.js"></script>
+
+</body>
+</html>

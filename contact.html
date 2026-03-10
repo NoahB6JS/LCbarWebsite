@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+
+<!-- THIS PAGE GIVES THE USER THE OPTION TO CONTACT US AND REQUEST A QUOTE FOR THEIR EVENT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leones Bar Hire</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+
+<body class="contact">
+
+    <nav class="nav_bar">
+
+<!-- Navigation bar (used on every html page)-->
+    <a href="index.html" class="nav-logo-link">
+        <img src="media/LC_logo.png" alt="Leones Catering Logo" class="nav-logo">
+    </a>
+
+    <div class="nav-Rside">
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="packages.html">Packages</a>
+            <a href="services.html">Services</a>
+            <a href="testimonials.html">Testimonials</a>
+        </div>
+
+        <button class="quote_btn" onclick="openQuote()">Contact Us</button>
+    </div>
+
+</nav>
+
+
+<!-- GET A QUOTE POPUP -->
+<div class="overlay" id="quoteOverlay" onclick="closeQuote()"></div>
+
+<div class="quote-popup" id="quotePopup">
+  <button class="close-btn" onclick="closeQuote()">x</button>
+  <h2>Contact Us</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Tell us about your event..." required></textarea>
+    <button type="submit" class="quote_btn">Send Request</button>
+  </form>
+</div>
+<!-- Hero Section -->
+
+<header>
+    <section class="hero-section contact">
+        <h1>Lets Get In Touch</h1>
+        <p>Lets create the perfect catering experience for you!</p>   
+        
+    </section>
+</header>
+<!-- Contact Form Section -->
+
+<section class="quote-section">
+    <h2>Request a Quote</h2>
+    <p class="quote-subtitle">
+        Tell us about your event and we'll get back to you with a custom quote.
+    </p>
+<!-- this form can be connected to a backend service to handle quote requests -->
+    <form class="quote-form" id="quoteForm">
+        
+        <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-row">
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        </div>
+<!-- this section can be used to add more specific fields related to the event -->
+        <div class="form-row">
+            <select name="eventType" required>
+                <option value="">Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="party">Private Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="other">Other</option>
+            </select>
+
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+        </div>
+
+        <textarea name="message" placeholder="Tell us about your event, menu ideas or any special requests!" required></textarea>
+
+        <button type="submit" class="quote-btn">Send Quote</button>
+    </form>
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <section class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-nav">
+                <img src="media/LC_logo.png" alt="Leone's Catering Services logo">
+                <nav>
+                    <nav id="footer-links">
+                         <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="packages.html">Packages</a>
+                        <a href="services.html">Services</a>
+                        <a href="testimonials.html">Testimonials</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get in Touch</h4>
+                <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Ayelsbury, Buckinghamshire, United Kingdom</li>
+                    <li>+44 7718 049283</li>
+                    <li>leonescatering@outlook.com</li>
+
+
+                </ul>   
+            </div>
+        </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy; 2026 Leone's Catering Services. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+    </div>
+
+    </section>
+</footer>
+
+
+<!--JAVASCRIPT LINK TO SCRIPT-->
+<script src="javascript/main.js"></script>
+
+</body>
+</html>
