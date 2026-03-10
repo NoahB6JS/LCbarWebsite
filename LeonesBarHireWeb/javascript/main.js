@@ -47,3 +47,4 @@ let current = 0;
   }
   //AUTOMATIC SLIDE MOVEMENT EVERY 3 SECONDS
 setInterval(() => move(1), 3000);
+
